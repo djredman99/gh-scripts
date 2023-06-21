@@ -2,6 +2,8 @@
 # since the GEI migration tool does not yet support this.  Also, it is likely that support in GEI, once added, would only do so
 # in the case of an org-to-org migration
 
+# IT ALSO has movie quotes for fun, which was a topic of conversation with the customer I created this for at the time :)
+
 ﻿# If you need to do this with two different auth'd account (GHEC to EMU for example) you would just need
 # to add the gh auth login calls previous to switching to calls against the different orgs
 
