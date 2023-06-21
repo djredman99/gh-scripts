@@ -1,3 +1,7 @@
+# This script uses the GraphQL API to move Org-level projectsV2 (new projects as opposed to classic projects) from one org to another 
+# since the GEI migration tool does not yet support this.  Also, it is likely that support in GEI, once added, would only do so
+# in the case of an org-to-org migration
+
 ﻿# If you need to do this with two different auth'd account (GHEC to EMU for example) you would just need
 # to add the gh auth login calls previous to switching to calls against the different orgs
 
