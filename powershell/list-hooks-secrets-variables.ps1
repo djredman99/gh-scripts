@@ -1,8 +1,8 @@
 ﻿$org='djredman99-org'
 
 # if you need to auth
-# $env:GH_TOKEN = '<add your PAT>'
-# gh auth login
+# $TOKEN = '<add your PAT>'
+# echo $TOKEN | gh auth login --with-token
 
 
 $repos = gh api graphql --paginate -F login=$org --jq '.[].organization.repositories.nodes[]' -f query='
