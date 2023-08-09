@@ -37,6 +37,7 @@ jobs:
       # Use the `get_workflow_runs` Python script to call GitHub API and output to runs.json
       - name: Get workflow runs
         run: |
+          ls
           python ./.github/scripts/get_org_workflow_runs.py ${{ github.repository_owner }} ${{ env.START_DATE }} ${{ env.END_DATE }}
           cat runs.json
 
