@@ -38,6 +38,8 @@ jobs:
       - name: Get workflow runs
         run: |
           ls
+          cd ./.github
+          ls
           python ./.github/scripts/get_org_workflow_runs.py ${{ github.repository_owner }} ${{ env.START_DATE }} ${{ env.END_DATE }}
           cat runs.json
 
