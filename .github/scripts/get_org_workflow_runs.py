@@ -66,7 +66,7 @@ except ValueError:
 
 
 # Construct the gh api command
-cmd = f'gh api orgs/{repo_owner}/repos --jq \'.[] | .name\''
+cmd = f'gh api users/{repo_owner}/repos --jq \'.[] | .name\''
 
 # Send the command and retrieve the output
 output = subprocess.check_output(cmd, shell=True, text=True)
