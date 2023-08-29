@@ -4,6 +4,7 @@
 
 - Using an Ubuntu 20.04 machine as this will default to installing ruby 2.7.0 (which bbs-exporter has a spec file of 2.4.0 < 2.7.0
    + Not tested, but 22.04 usins 3.0.2 as default ruby, perhaps you can change the spec file in the next bullet below to include 3.0.2...ruby ">= 2.4.0", "<= 3.0.2":'
+   + Did try this but was havving issues with ruby-teminfo-0.1.1 ( fatal error: rubyio.h: No such file or directory )
 - Need to change the Gemfile in root to include 2.7.0 by adding an '=' after the "<" symbol -   ruby ">= 2.4.0", "<= 2.7.0":'
 - These need to be installed:
    + sudo apt install make
