@@ -1,6 +1,5 @@
-### C# Code Snippets Markdown File
+#C# Code Snippets Markdown File
 
-```markdown
 ## Example 1: Hello World
 
 ```csharp
