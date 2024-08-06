@@ -1,6 +1,3 @@
-
-Next, let's create a Markdown file for C# code snippets:
-
 ### C# Code Snippets Markdown File
 
 ```markdown
