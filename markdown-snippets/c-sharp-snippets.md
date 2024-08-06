@@ -1,4 +1,4 @@
-# C# Code Snippets Markdown File
+# C# Code Snippets
 
 ## Example 1: Hello World
 
