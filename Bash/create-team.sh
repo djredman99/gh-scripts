@@ -17,6 +17,12 @@ if [ "$#" -ne 2 ]; then
   exit 1
 fi
 
+# Check if GITHUB_TOKEN environment variable is set
+if [ -z "$GITHUB_TOKEN" ]; then
+    echo "Error: GITHUB_TOKEN environment variable is not set."
+    exit 1
+fi
+
 # Assign arguments to variables
 ORG_NAME=$1
 TEAM_NAME=$2
