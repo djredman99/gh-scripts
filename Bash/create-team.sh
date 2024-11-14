@@ -1,17 +1,15 @@
-##!/bin/bash
+#!/bin/bash
 
-# Function to create a team in the specified organization using GitHub CLI
+# Set your token in the GITHUB_TOKEN environment variable
+
+# Function to create a team in the specified organization
 create_team() {
   local org_name=$1
   local team_name=$2
-  gh api -X POST "orgs/$org_name/teams" -f name="$team_name"
+  curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" \
+    -d "{\"name\": \"$team_name\"}" \
+    "https://api.github.com/orgs/$org_name/teams"
 }
-
-# Check if the user is authenticated with GitHub CLI
-if ! gh auth status > /dev/null 2>&1; then
-  echo "You are not authenticated with GitHub CLI. Please run 'gh auth login' to authenticate."
-  exit 1
-fi
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 2 ]; then
