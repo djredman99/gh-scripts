@@ -10,6 +10,9 @@ create_team() {
   curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" \
     -d "{\"name\": \"$team_name\", \"ldap_dn\": \"$idp_group\"}" \
     "https://api.github.com/orgs/$org_name/teams"
+
+## For linking to IdP in EMU, need to use /orgs/{org}/teams/{team_slug}/external-groups endpoint
+
 }
 
 # Check if the correct number of arguments is provided
