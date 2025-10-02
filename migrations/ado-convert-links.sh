@@ -1,6 +1,6 @@
 #!/bin/bash
 # filepath: /Users/djredman99/Source/gh-scripts/migrations/ado-convert-links.sh
-# This script is intended to add A<owner/repo>B#123 links to PRs in GitHub.  When using the ado2gh migration tool, the
+# This script is intended to add AB#123 links to PRs in GitHub.  When using the ado2gh migration tool, the
 # links it generates are in the form of "AzureDevOps/#12345" which is just a 1-way link to the work item URL.
 # The Azure Boards integration uses AB#12345 links which will create a two-way link between the PR and the work item.
 
